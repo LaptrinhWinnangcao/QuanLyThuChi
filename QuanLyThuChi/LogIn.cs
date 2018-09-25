@@ -15,6 +15,7 @@ namespace QuanLyThuChi
         public LogIn()
         {
             InitializeComponent();
+            this.AcceptButton = btn_login;
         }
         LoginResult CauHinh = new LoginResult();
 
@@ -66,8 +67,27 @@ namespace QuanLyThuChi
                 MessageBox.Show("Tài khoản bị khóa");
                 return;
             }
+<<<<<<< HEAD
             
+=======
+            MainForm frm = new MainForm();
+            frm.Show(); ;
+>>>>>>> 020fcf28159d1fbad836f6f0797a5102004733d8
             this.Hide();
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+               
+        }
+
+        private void LogIn_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult r;
+            r = MessageBox.Show("Bạn muốn thoát", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+            if (r == DialogResult.No)
+                e.Cancel = true;
         }
 
     }

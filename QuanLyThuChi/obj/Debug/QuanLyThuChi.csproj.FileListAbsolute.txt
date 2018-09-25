@@ -2,7 +2,6 @@ F:\DAMH_LTWNC\QuanLyThuChi\QuanLyThuChi\bin\Debug\QuanLyThuChi.exe.config
 F:\DAMH_LTWNC\QuanLyThuChi\QuanLyThuChi\bin\Debug\QuanLyThuChi.exe
 F:\DAMH_LTWNC\QuanLyThuChi\QuanLyThuChi\bin\Debug\QuanLyThuChi.pdb
 F:\DAMH_LTWNC\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.csprojResolveAssemblyReference.cache
-F:\DAMH_LTWNC\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.DangNhap.resources
 F:\DAMH_LTWNC\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.Properties.Resources.resources
 F:\DAMH_LTWNC\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.csproj.GenerateResource.Cache
 F:\DAMH_LTWNC\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.exe
