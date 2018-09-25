@@ -66,8 +66,7 @@ namespace QuanLyThuChi
                 MessageBox.Show("Tài khoản bị khóa");
                 return;
             }
-            DangNhap frm = new DangNhap();
-            frm.Show(); ;
+            
             this.Hide();
         }
 

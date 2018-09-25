@@ -10,3 +10,14 @@ F:\DAMH_LTWNC\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.pdb
 F:\DAMH_LTWNC\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.LogIn.resources
 F:\DAMH_LTWNC\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.exe.licenses
 F:\DAMH_LTWNC\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.CauHinh.resources
+C:\Users\Thuy Duong\Documents\GitHub\QuanLyThuChi\QuanLyThuChi\bin\Debug\QuanLyThuChi.exe.config
+C:\Users\Thuy Duong\Documents\GitHub\QuanLyThuChi\QuanLyThuChi\bin\Debug\QuanLyThuChi.exe
+C:\Users\Thuy Duong\Documents\GitHub\QuanLyThuChi\QuanLyThuChi\bin\Debug\QuanLyThuChi.pdb
+C:\Users\Thuy Duong\Documents\GitHub\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.DangNhap.resources
+C:\Users\Thuy Duong\Documents\GitHub\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.LogIn.resources
+C:\Users\Thuy Duong\Documents\GitHub\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.Properties.Resources.resources
+C:\Users\Thuy Duong\Documents\GitHub\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.csproj.GenerateResource.Cache
+C:\Users\Thuy Duong\Documents\GitHub\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.exe.licenses
+C:\Users\Thuy Duong\Documents\GitHub\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.exe
+C:\Users\Thuy Duong\Documents\GitHub\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.pdb
+C:\Users\Thuy Duong\Documents\GitHub\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.frm_CauHinh.resources

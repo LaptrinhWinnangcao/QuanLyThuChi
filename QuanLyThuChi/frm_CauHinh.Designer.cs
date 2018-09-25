@@ -1,6 +1,6 @@
 ﻿namespace QuanLyThuChi
 {
-    partial class CauHinh
+    partial class frm_CauHinh
     {
         /// <summary>
         /// Required designer variable.
@@ -30,17 +30,17 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            this.txt_UserName = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Password = new DevExpress.XtraEditors.TextEdit();
+            this.cb_Server = new System.Windows.Forms.ComboBox();
+            this.cb_Database = new System.Windows.Forms.ComboBox();
+            this.btn_Luu = new System.Windows.Forms.Button();
+            this.btn_huy = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_UserName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Password.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -62,15 +62,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Server Name";
             // 
-            // comboBoxEdit1
-            // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(89, 72);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(211, 20);
-            this.comboBoxEdit1.TabIndex = 2;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -79,15 +70,6 @@
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Database";
-            // 
-            // comboBoxEdit2
-            // 
-            this.comboBoxEdit2.Location = new System.Drawing.Point(89, 192);
-            this.comboBoxEdit2.Name = "comboBoxEdit2";
-            this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit2.Size = new System.Drawing.Size(211, 20);
-            this.comboBoxEdit2.TabIndex = 2;
             // 
             // label4
             // 
@@ -107,40 +89,77 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Password";
             // 
-            // textEdit1
+            // txt_UserName
             // 
-            this.textEdit1.Location = new System.Drawing.Point(89, 111);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(211, 20);
-            this.textEdit1.TabIndex = 4;
+            this.txt_UserName.Location = new System.Drawing.Point(89, 111);
+            this.txt_UserName.Name = "txt_UserName";
+            this.txt_UserName.Size = new System.Drawing.Size(211, 20);
+            this.txt_UserName.TabIndex = 4;
             // 
-            // textEdit2
+            // txt_Password
             // 
-            this.textEdit2.Location = new System.Drawing.Point(89, 150);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(211, 20);
-            this.textEdit2.TabIndex = 4;
+            this.txt_Password.Location = new System.Drawing.Point(89, 150);
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.Size = new System.Drawing.Size(211, 20);
+            this.txt_Password.TabIndex = 4;
+            // 
+            // cb_Server
+            // 
+            this.cb_Server.FormattingEnabled = true;
+            this.cb_Server.Location = new System.Drawing.Point(89, 75);
+            this.cb_Server.Name = "cb_Server";
+            this.cb_Server.Size = new System.Drawing.Size(211, 21);
+            this.cb_Server.TabIndex = 5;
+            this.cb_Server.DropDown += new System.EventHandler(this.cb_Server_DropDown);
+            // 
+            // cb_Database
+            // 
+            this.cb_Database.FormattingEnabled = true;
+            this.cb_Database.Location = new System.Drawing.Point(89, 192);
+            this.cb_Database.Name = "cb_Database";
+            this.cb_Database.Size = new System.Drawing.Size(211, 21);
+            this.cb_Database.TabIndex = 5;
+            this.cb_Database.DropDown += new System.EventHandler(this.cb_Database_DropDown);
+            // 
+            // btn_Luu
+            // 
+            this.btn_Luu.Location = new System.Drawing.Point(89, 229);
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(77, 31);
+            this.btn_Luu.TabIndex = 6;
+            this.btn_Luu.Text = "Lưu lại";
+            this.btn_Luu.UseVisualStyleBackColor = true;
+            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
+            // 
+            // btn_huy
+            // 
+            this.btn_huy.Location = new System.Drawing.Point(225, 229);
+            this.btn_huy.Name = "btn_huy";
+            this.btn_huy.Size = new System.Drawing.Size(75, 31);
+            this.btn_huy.TabIndex = 6;
+            this.btn_huy.Text = "Hủy bỏ";
+            this.btn_huy.UseVisualStyleBackColor = true;
             // 
             // CauHinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 237);
-            this.Controls.Add(this.textEdit2);
-            this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.comboBoxEdit2);
+            this.ClientSize = new System.Drawing.Size(335, 272);
+            this.Controls.Add(this.btn_huy);
+            this.Controls.Add(this.btn_Luu);
+            this.Controls.Add(this.cb_Database);
+            this.Controls.Add(this.cb_Server);
+            this.Controls.Add(this.txt_Password);
+            this.Controls.Add(this.txt_UserName);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBoxEdit1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "CauHinh";
             this.Text = "CauHinh";
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_UserName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Password.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,12 +169,14 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private System.Windows.Forms.Label label3;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txt_UserName;
+        private DevExpress.XtraEditors.TextEdit txt_Password;
+        private System.Windows.Forms.ComboBox cb_Server;
+        private System.Windows.Forms.ComboBox cb_Database;
+        private System.Windows.Forms.Button btn_Luu;
+        private System.Windows.Forms.Button btn_huy;
     }
 }
