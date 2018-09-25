@@ -50,34 +50,5 @@ namespace QuanLyThuChi
             System.Data.DataTable table = instance.GetDataSources();
             return table;
         }
-
-        public List<string> GetDatabaseName(string pServerName, string pUser, string pPass)
-        {
-            List<string> _list = new List<string>();
-            DataTable dt = new DataTable();
-            try
-            {
-                SqlDataAdapter da = new SqlDataAdapter("SELECT name FROM sys.databases", "Data Source=" + pServerName + ";Initial Catalog=" + "master" + ";User ID=" + pUser + ";pwd = " + pPass + "");
-                da.Fill(dt);
-                foreach (System.Data.DataRow row in dt.Rows)
-                {
-                    foreach (System.Data.DataColumn col in dt.Columns)
-                    {
-                        _list.Add(row[col].ToString());
-                    }
-                }
-            }
-            catch
-                {
-                    return null;
-                }
-            return _list;
-        }
-
-        public void ChangeConnectionString(string pServerName, string pDataBase, string pUser, string pPass)
-        {
-            QuanLyThuChi.Properties.Settings.Default.ConnectString = "Data Source=" + pServerName + ";Initial Catalog=" + pDataBase + ";User ID=" + pUser + ";pwd = " + pPass + "";
-            Properties.Settings.Default.Save();
-        }
     }
 }
