@@ -86,7 +86,7 @@
             // 
             this.btn_login.Location = new System.Drawing.Point(224, 138);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(92, 29);
+            this.btn_login.Size = new System.Drawing.Size(75, 23);
             this.btn_login.TabIndex = 3;
             this.btn_login.Tag = "2";
             this.btn_login.Text = "Đăng nhập";
@@ -94,13 +94,12 @@
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Location = new System.Drawing.Point(341, 138);
+            this.btn_cancel.Location = new System.Drawing.Point(368, 139);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(102, 29);
+            this.btn_cancel.Size = new System.Drawing.Size(75, 23);
             this.btn_cancel.TabIndex = 3;
             this.btn_cancel.Tag = "3";
             this.btn_cancel.Text = "Hủy";
-            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // LogIn
             // 
@@ -117,7 +116,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "LogIn";
             this.Text = "Đăng nhập";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LogIn_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
